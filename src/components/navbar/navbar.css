@@ -1,0 +1,16 @@
+ul{
+    justify-items: center;
+}
+
+li{
+    display: inline;
+}
+
+nav{
+    flex: 2;
+}
+.nav-link {
+    color: #a7753d;
+    font-size: 18px;
+    text-decoration: none;
+}
