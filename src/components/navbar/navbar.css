@@ -1,16 +1,35 @@
-ul{
-    justify-items: center;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-li{
-    display: inline;
-}
 
 nav{
-    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+    font-family: 'Gamer-Bold';
 }
-.nav-link {
-    color: #a7753d;
-    font-size: 18px;
+
+.nav-logo {
+    color: rgb(rgb(255, 255, 255));
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: x-large;
+}
+
+.navbar-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.navbar-links a{
+    color: white;
     text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
