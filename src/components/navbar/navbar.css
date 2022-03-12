@@ -15,6 +15,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .nav-logo {
@@ -40,6 +41,10 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
+}
+
+.navbar-links a:hover{
+    color: #ebd091;
 }
 
 .burger{
