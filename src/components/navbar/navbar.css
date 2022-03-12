@@ -10,12 +10,15 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #b16b2a;
+    background-color: #19380c;
     font-family: 'Gamer-Bold';
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-logo {
-    color: rgb(rgb(255, 255, 255));
+    color: #e9bc50;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: x-large;
@@ -32,7 +35,7 @@ nav{
 }
 
 .navbar-links a{
-    color: white;
+    color: #e9bc50;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -47,8 +50,14 @@ nav{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #e9bc50;
     margin: 5px;
+}
+
+.smiley-face{
+    height: 70px;
+    display: block;
+    padding: 5px;
 }
 
 @media screen and (max-width: 1096px){
@@ -66,7 +75,7 @@ nav{
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #b16b2a;
+        background-color: #19380c;
         display: flex;
         flex-direction: column;
         align-items: center;

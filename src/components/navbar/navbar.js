@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import '../../index.css'
+import smileyFace from '../../assets/smileyFace.png'
 
 const Navbar = () => {
   const [isActive, setActive] = useState("false");
@@ -9,11 +10,11 @@ const Navbar = () => {
   const navSlide = () => {
     setActive(!isActive);
     navLinks.forEach((link, index) => {
-      if (link.style.animation) {
+      if (isActive) {
         link.style.animation = '';
-      }
-      link.style.animation = `navlinkFade 0.5s ease forwards ${index / 7}s`;
-    });
+      } else{
+      link.style.animation = `navlinkFade 0.5s ease forwards ${(index / 7) + 0.4}s`;
+    }});
   };
 
   
@@ -21,6 +22,9 @@ const Navbar = () => {
   return (
     <body>
       <nav>
+        <div>
+          <img src={smileyFace} alt="smile" className='smiley-face'></img>
+        </div>
         <div className='nav-logo'>
           <h4>Mellow Honey</h4>
         </div>
