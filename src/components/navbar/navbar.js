@@ -36,9 +36,9 @@ const Navbar = () => {
             <li><a className='nav-link' href="#gallery">Gallery</a></li>
           </ul>
           <div className='burger' onClick={navSlide}>
-            <div className='line1'></div>
-            <div className='line2'></div>
-            <div className='line3'></div>
+            <div className={!isActive ? 'line1 ' : 'line1trans'}></div>
+            <div className={!isActive ? 'line2 ' : 'line2trans'}></div>
+            <div className={!isActive ? 'line3 ' : 'line3trans'}></div>
           </div>
       </nav>
     </body>

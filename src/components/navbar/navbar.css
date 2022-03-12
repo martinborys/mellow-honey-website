@@ -52,6 +52,7 @@ nav{
     height: 3px;
     background-color: #e9bc50;
     margin: 5px;
+    transition: all 0.3s ease;
 }
 
 .smiley-face{
@@ -105,4 +106,14 @@ nav{
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.line1trans{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.line2trans{
+    opacity: 0;
+}
+.line3trans{
+    transform: rotate(45deg) translate(-5px, -6px);
 }
